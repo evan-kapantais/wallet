@@ -10,29 +10,48 @@
   <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
-  <div class="left col-md-4">
-    <div class="left-header">
-      <h1>My Wallets</h1>
-      <img src="img/plus.svg" alt="plus" id="wallet-plus">
+  <div class="row container">
+    <div class="left col-md-4">
+      <div class="left-header">
+        <h1>My Wallets</h1>
+        <img src="img/plus.svg" alt="plus" id="wallet-plus">
+      </div>
+      <div class="cards">
+        <div class="card">
+          <img src="img/visa.svg" alt="visa">
+          <p class="card-number">**** **** **** 2562</p>
+          <p class="card-date">Valid thru: 12/18</p>
+        </div>
+        <div class="card">
+          <img src="img/mastercard.svg" alt="mastercard">
+          <p class="card-number">**** **** **** 2101</p>
+          <p class="card-date">Valid thru: 07/19</p>
+        </div>
+        <div class="card">
+          <img src="img/maestro.svg" alt="maestro">
+          <p class="card-number">**** **** **** 8335</p>
+          <p class="card-date">Valid thru: 19/17</p>
+        </div>
+      </div>
     </div>
-    <div class="cards">
-      <div class="card">
-        <img src="img/visa.svg" alt="visa">
-        <p class="card-number">**** **** **** 2562</p>
-        <p class="card-date">Valid thru: 12/18</p>
+    <div class="right col-md-8">
+      <div class="balance-header">
+        <h1>Current Balance</h1>
+        <span>&#36;729.00</span>
       </div>
-      <div class="card">
-        <img src="img/mastercard.svg" alt="mastercard">
-        <p class="card-number">**** **** **** 2101</p>
-        <p class="card-date">Valid thru: 07/19</p>
-      </div>
-      <div class="card">
-        <img src="img/maestro.svg" alt="maestro">
-        <p class="card-number">**** **** **** 8335</p>
-        <p class="card-date">Valid thru: 19/17</p>
+      <div class="transactions">
+        <div class="transaction-row">
+          <img src="img/minus.svg" class="sign">
+          <div class="transaction-content">
+            <div class="transaction-title">
+              <h2><strong>Apple iPhone 7, 128 GB</strong></h2>
+              <p class="sub">Electronics #32343424 - 12 July 2015</p>
+            </div>
+            <div class="transaction-amount">650.00</div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-  <div class="right col-md-8"></div>
 </body>
 </html>
