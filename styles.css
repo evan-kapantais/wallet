@@ -68,6 +68,12 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 20px;
+}
+
+.transaction-left {
+  display: flex;
+  align-items: center;
 }
 
 .sign {
@@ -75,6 +81,7 @@ body {
   width: 30px;
   height: 30px;
   border-radius: 15px;
+  margin-right: 50px;
 }
 
 .transaction-title h2 {
