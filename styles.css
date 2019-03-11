@@ -5,21 +5,29 @@ body {
 
 .container {
   background-color: #fff;
+  width: 1000px;
+  height: 500px;
 }
 
-.left {
+.left, .right {
   background-color: rgb(230, 230, 230);
-  padding: 50px 50px;
+  padding: 40px 40px;
+  overflow: scroll;
+  display: relative;
 }
 
-.left-header {
+.left-header, .balance-header {
   display: flex;
   justify-content: space-between;
   margin-bottom: 40px;
 }
 
-.left-header h1 {
+.left-header h1, .balance-header h1 {
   font-size: 1.5rem;
+}
+
+::-webkit-scrollbar {
+  width: 0;
 }
 
 .card {
@@ -31,4 +39,55 @@ body {
 .card img {
   width: 70px;
   margin-bottom: 25px;
+}
+
+.right {
+  background-color: #fff;
+}
+
+.balance-header {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 40px;
+}
+
+#balance {
+  font-weight: 700;
+  font-size: 1.7rem;
+}
+
+.balance-header .decimal {
+  font-size: 1.2rem;
+}
+
+.decimal {
+  position: absolute;
+  font-size: 0.7rem;
+}
+
+.transaction-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sign {
+  border: 1px solid #ccc;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+}
+
+.transaction-title h2 {
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+.sub {
+  font-weight: 700;
+  color: grey;
+}
+
+.expense {
+  font-weight: 700;
+  font-size: 1.2rem;
 }
